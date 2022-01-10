@@ -7,13 +7,19 @@ namespace ComposingMethods.RemoveAssignmentstoParameters
         /*
          * Problem:
          * Some value is assigned to a parameter inside method’s body.
+         * 
+         * Solution:
+         * Use a local variable instead of a parameter.
+         * 
         */
         public static double Apply(Product product) {
+            double result = product.value;
+
             if (product.quantity > 50) {
-                product.value = _10PercentDiscount.ApplyDiscount(product.value);
+                result = _10PercentDiscount.ApplyDiscount(result);
             }
 
-            return product.value;
+            return result;
         }
     }
 }
