@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ComposingMethods.ExtractMethod\ComposingMethods.ExtractMethod.csproj" />
+    <ProjectReference Include="..\ComposingMethods.RemoveAssignmentstoParameters\ComposingMethods.RemoveAssignmentstoParameters.csproj" />
   </ItemGroup>
 
 </Project>

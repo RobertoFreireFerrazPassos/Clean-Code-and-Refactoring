@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Substitute Algorithm", "Sub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposingMethods.ExtractMethod", "ComposingMethods.ExtractMethod\ComposingMethods.ExtractMethod.csproj", "{DD88A64D-D031-4BF7-A2C9-88E1399F2A31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposingMethods.RemoveAssignmentstoParameters", "ComposingMethods.RemoveAssignmentstoParameters\ComposingMethods.RemoveAssignmentstoParameters.csproj", "{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{DD88A64D-D031-4BF7-A2C9-88E1399F2A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD88A64D-D031-4BF7-A2C9-88E1399F2A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD88A64D-D031-4BF7-A2C9-88E1399F2A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{2015BC69-679E-4456-B486-38016CEB4623} = {8D35C5F7-660D-4CC3-B2A9-71B5556ACF16}
 		{20689E34-8D64-4934-9609-CE12292B7B98} = {8D35C5F7-660D-4CC3-B2A9-71B5556ACF16}
 		{DD88A64D-D031-4BF7-A2C9-88E1399F2A31} = {EC2AC00B-7681-4732-B4A1-AF758CC855F4}
+		{8BFB8124-EF4C-466A-9D4C-0AF28316A3BC} = {3426B4A4-0F6B-473F-9580-BA2D67C38C4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D69B9CF6-A4C6-4093-939C-8BCD561E70AE}
