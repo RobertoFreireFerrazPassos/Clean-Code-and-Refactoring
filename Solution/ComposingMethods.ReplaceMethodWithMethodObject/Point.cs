@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ComposingMethods.ReplaceMethodWithMethodObject
+﻿namespace ComposingMethods.ReplaceMethodWithMethodObject
 {
     /*
      * 
@@ -11,6 +9,8 @@ namespace ComposingMethods.ReplaceMethodWithMethodObject
     {
         private double Latitude;
         private double Longitude;
+        public static readonly double Radian = 180 / 3.1415;
+        public static readonly double Radius = 6371;
 
         public Point(double latitude, double longitude)
         {
@@ -18,18 +18,18 @@ namespace ComposingMethods.ReplaceMethodWithMethodObject
             Longitude = longitude;
         }
 
+        public double GetRadianLatitude() {
+            return Latitude / Point.Radian; 
+        }
+
+        public double GetRadianLongitude()
+        {
+            return Longitude / Point.Radian;
+        }
+
         public double CalculateDistance(Point anotherPoint)
         {
-            double radian = 180 / 3.1415;
-            var radiansLatitude = this.Latitude / radian;
-            var anotherRadiansLatitude = anotherPoint.Latitude / radian;
-            var radiansLongitude = this.Longitude / radian;
-            var anotherRadiansLongitude = anotherPoint.Longitude / radian;
-            var radius = 6371;
-            var arc = Math.Acos(Math.Sin(radiansLatitude) * Math.Sin(anotherRadiansLatitude)
-                      + Math.Cos(radiansLatitude) * Math.Cos(anotherRadiansLatitude)
-                         * Math.Cos(radiansLongitude - anotherRadiansLongitude));
-            return Math.Round(arc * radius,3);
+            return new EarthDistance(this, anotherPoint).CalculateDistance();
         }
     }
 }
