@@ -19,17 +19,31 @@ namespace ComposingMethods.ExtractMethod
             Currency = currency;
         }
         /*
+         * Problem:
          * You have a code fragment that can be grouped together.
+         * 
+         * Solution:
+         * Move this code to a separate new method (or function) and replace the old code with a call to the method.
+         * 
         */
         public PaymentVoucherToPrint GenerateVoucherToPrint() {
             var voucherToPrint = new PaymentVoucherToPrint() {
-                Buyer = this.Buyer.Substring(0, 10)
+                Buyer = GenerateBuyerTruncating(),
+                Value = GenerateValueWithCurrency()
             };
 
-            string currency = ConvertCurrencyToString.Convert(Currency);                
-            voucherToPrint.Value = currency + " " + Value;
-
             return voucherToPrint;
+        }
+
+        private string GenerateValueWithCurrency() 
+        {
+            string currency = ConvertCurrencyToString.Convert(Currency);
+            return currency + " " + Value;
+        }
+
+        private string GenerateBuyerTruncating()
+        {
+            return this.Buyer.Substring(0, 10);
         }
     }
 }
