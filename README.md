@@ -17,18 +17,13 @@ https://refactoring.guru/pt-br/refactoring/techniques
 
 * Extract Method
 
-* Inline Method
-
-* Extract Variable
-
-* Inline Temp
-
-* Replace Temp with Query
-
-* Split Temporary Variable
-
 * Remove Assignments to Parameters
 
 * Replace Method with Method Object
 
-* Substitute Algorithm
+
+### Simplifying Conditional Expressions
+
+
+* Replace Nested Conditional with Guard Clauses
+
