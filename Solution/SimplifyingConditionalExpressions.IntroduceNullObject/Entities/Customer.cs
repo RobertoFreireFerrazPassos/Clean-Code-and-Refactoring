@@ -9,12 +9,6 @@ namespace SimplifyingConditionalExpressions.IntroduceNullObject.Entities
         public string Name { get; private set; }
         private BillingPlan BillingPlan { get; set; }
 
-        public Customer(string name) 
-        {
-            Id = Guid.NewGuid();
-            BillingPlan = new BillingPlan(BillingPlanEnum.Basic);
-        }
-
         public Customer(Guid id,
             string name,
             BillingPlanEnum billingPlan = BillingPlanEnum.Basic)
@@ -24,7 +18,7 @@ namespace SimplifyingConditionalExpressions.IntroduceNullObject.Entities
             BillingPlan = new BillingPlan(billingPlan);
         }
 
-        public BillingPlanEnum GetPlan()
+        public virtual BillingPlanEnum GetPlan()
         {
             return BillingPlan.Plan;
         }

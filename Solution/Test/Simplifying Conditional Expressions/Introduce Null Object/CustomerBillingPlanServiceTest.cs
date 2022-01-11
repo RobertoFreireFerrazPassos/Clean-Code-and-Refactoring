@@ -19,6 +19,7 @@ namespace Test.Simplifying_Conditional_Expressions.Introduce_Null_Object
             var result = customerBillingPlanService.GetPlan(customer);
 
             Assert.Equal(BillingPlanEnum.Premium.ToString(), result.BillingPlan);
+            Assert.Equal(id, result.CustomerId);
         }
 
         [Fact(DisplayName = "Must Get Basic Plan Of Null Customer")]
@@ -29,6 +30,7 @@ namespace Test.Simplifying_Conditional_Expressions.Introduce_Null_Object
             var result = customerBillingPlanService.GetPlan(null);
 
             Assert.Equal(BillingPlanEnum.Basic.ToString(), result.BillingPlan);
+            Assert.Equal(Guid.Empty, result.CustomerId);
         }
     }
 }

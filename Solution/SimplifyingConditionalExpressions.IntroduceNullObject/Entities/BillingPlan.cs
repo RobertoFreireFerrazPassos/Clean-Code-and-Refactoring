@@ -9,15 +9,5 @@ namespace SimplifyingConditionalExpressions.IntroduceNullObject.Entities
         public BillingPlan(BillingPlanEnum plan) {
             Plan = plan;
         }
-
-        public static BillingPlanEnum GetBasicPlan()
-        {
-            return BillingPlanEnum.Basic;
-        }
-
-        public static BillingPlanEnum GetPremiumPlan()
-        {
-            return BillingPlanEnum.Premium;
-        }
     }
 }
