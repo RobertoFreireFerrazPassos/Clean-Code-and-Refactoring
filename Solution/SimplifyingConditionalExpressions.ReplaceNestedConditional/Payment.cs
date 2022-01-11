@@ -4,6 +4,9 @@
      * Problem:
      * You have a group of nested conditionals and it’s hard to determine the normal flow of code execution.
      * 
+     * Solution
+     * Isolate all special checks and edge cases into separate clauses and place them before the main checks. Ideally, you should have a “flat” list of conditionals, one after the other.
+     * 
     */
     public class Payment
     {
@@ -25,32 +28,20 @@
 
         public double GetPayAmount()
         {
-            double result;
-
             if (this.IsDead)
             {
-                result = DeadAmount();
+                return DeadAmount();
             }
-            else
+            if (this.IsSeparated)
             {
-                if (this.IsSeparated)
-                {
-                    result = SeparatedAmount();
-                }
-                else
-                {
-                    if (this.IsRetired)
-                    {
-                        result = RetiredAmount();
-                    }
-                    else
-                    {
-                        result = NormalPayAmount();
-                    }
-                }
+                return SeparatedAmount();
+            }
+            if (this.IsRetired)
+            {
+                return RetiredAmount();
             }
 
-            return result;
+            return NormalPayAmount();
         }
 
         private double SeparatedAmount() => 22;
