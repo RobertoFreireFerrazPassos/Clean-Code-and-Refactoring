@@ -23,6 +23,7 @@
     <ProjectReference Include="..\ComposingMethods.ExtractMethod\ComposingMethods.ExtractMethod.csproj" />
     <ProjectReference Include="..\ComposingMethods.RemoveAssignmentstoParameters\ComposingMethods.RemoveAssignmentstoParameters.csproj" />
     <ProjectReference Include="..\ComposingMethods.ReplaceMethodWithMethodObject\ComposingMethods.ReplaceMethodWithMethodObject.csproj" />
+    <ProjectReference Include="..\SimplifyingConditionalExpressions.IntroduceNullObject\SimplifyingConditionalExpressions.IntroduceNullObject.csproj" />
     <ProjectReference Include="..\SimplifyingConditionalExpressions.ReplaceNestedConditional\SimplifyingConditionalExpressions.ReplaceNestedConditional.csproj" />
   </ItemGroup>
 
