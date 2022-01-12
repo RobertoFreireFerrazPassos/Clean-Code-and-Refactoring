@@ -1,4 +1,5 @@
 ﻿using SimplifyingConditionalExpressions.ReplaceWithPolymorphism;
+using SimplifyingConditionalExpressions.ReplaceWithPolymorphism.TransportBills;
 using Xunit;
 
 namespace Test.Simplifying_Conditional_Expressions.Replace_Conditional_with_Polymorphism
@@ -12,7 +13,15 @@ namespace Test.Simplifying_Conditional_Expressions.Replace_Conditional_with_Poly
         public void MustGetTransportBill(TransportationTypeEnum transportationType, int hours, 
             int loadKg, int expectedResult)
         {
-            var transportBill = new TransportBill(transportationType, hours, loadKg);
+            TransportBill transportBill = null;
+
+            if (transportationType == TransportationTypeEnum.BUS)
+            {
+                transportBill = new BusTransportBill(transportationType, loadKg);
+            } else if (transportationType == TransportationTypeEnum.CAR)
+            {
+                transportBill = new CarTransportBill(transportationType, hours);
+            }
 
             var result = transportBill.GetBill();
 
