@@ -25,6 +25,7 @@
     <ProjectReference Include="..\ComposingMethods.ReplaceMethodWithMethodObject\ComposingMethods.ReplaceMethodWithMethodObject.csproj" />
     <ProjectReference Include="..\SimplifyingConditionalExpressions.IntroduceNullObject\SimplifyingConditionalExpressions.IntroduceNullObject.csproj" />
     <ProjectReference Include="..\SimplifyingConditionalExpressions.ReplaceNestedConditional\SimplifyingConditionalExpressions.ReplaceNestedConditional.csproj" />
+    <ProjectReference Include="..\SimplifyingConditionalExpressions.ReplaceWithPolymorphism\SimplifyingConditionalExpressions.ReplaceWithPolymorphism.csproj" />
   </ItemGroup>
 
 </Project>

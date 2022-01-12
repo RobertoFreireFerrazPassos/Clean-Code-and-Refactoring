@@ -33,11 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposingMethods.ReplaceMet
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Replace Nested Conditional with Guard Clauses", "Replace Nested Conditional with Guard Clauses", "{0AE020F7-D3D4-4A90-94ED-0E785CF396C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplifyingConditionalExpressions.ReplaceNestedConditional", "SimplifyingConditionalExpressions.ReplaceNestedConditional\SimplifyingConditionalExpressions.ReplaceNestedConditional.csproj", "{9E62FF8C-3923-44B8-96BA-92AF1D5D252F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplifyingConditionalExpressions.ReplaceNestedConditional", "SimplifyingConditionalExpressions.ReplaceNestedConditional\SimplifyingConditionalExpressions.ReplaceNestedConditional.csproj", "{9E62FF8C-3923-44B8-96BA-92AF1D5D252F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduce Null Object", "Introduce Null Object", "{807E04BE-2257-4761-B7C4-FF02BE5DFB5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplifyingConditionalExpressions.IntroduceNullObject", "SimplifyingConditionalExpressions.IntroduceNullObject\SimplifyingConditionalExpressions.IntroduceNullObject.csproj", "{AC47AC64-4138-4DAB-B5FF-3312EBD328D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplifyingConditionalExpressions.IntroduceNullObject", "SimplifyingConditionalExpressions.IntroduceNullObject\SimplifyingConditionalExpressions.IntroduceNullObject.csproj", "{AC47AC64-4138-4DAB-B5FF-3312EBD328D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Replace Conditional with Polymorphism", "Replace Conditional with Polymorphism", "{4204A267-732C-4B00-A517-58F46F0F051D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplifyingConditionalExpressions.ReplaceWithPolymorphism", "SimplifyingConditionalExpressions.ReplaceWithPolymorphism\SimplifyingConditionalExpressions.ReplaceWithPolymorphism.csproj", "{D8195813-E0A9-4A4F-9F09-B622CEEE5732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,10 @@ Global
 		{AC47AC64-4138-4DAB-B5FF-3312EBD328D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC47AC64-4138-4DAB-B5FF-3312EBD328D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC47AC64-4138-4DAB-B5FF-3312EBD328D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8195813-E0A9-4A4F-9F09-B622CEEE5732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8195813-E0A9-4A4F-9F09-B622CEEE5732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8195813-E0A9-4A4F-9F09-B622CEEE5732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8195813-E0A9-4A4F-9F09-B622CEEE5732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +93,8 @@ Global
 		{9E62FF8C-3923-44B8-96BA-92AF1D5D252F} = {0AE020F7-D3D4-4A90-94ED-0E785CF396C4}
 		{807E04BE-2257-4761-B7C4-FF02BE5DFB5A} = {90688B2C-1298-44B3-8729-26AE9EE71DAE}
 		{AC47AC64-4138-4DAB-B5FF-3312EBD328D9} = {807E04BE-2257-4761-B7C4-FF02BE5DFB5A}
+		{4204A267-732C-4B00-A517-58F46F0F051D} = {90688B2C-1298-44B3-8729-26AE9EE71DAE}
+		{D8195813-E0A9-4A4F-9F09-B622CEEE5732} = {4204A267-732C-4B00-A517-58F46F0F051D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D69B9CF6-A4C6-4093-939C-8BCD561E70AE}

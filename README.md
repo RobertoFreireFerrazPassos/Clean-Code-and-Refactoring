@@ -28,3 +28,5 @@ https://refactoring.guru/pt-br/refactoring/techniques
 * Replace Nested Conditional with Guard Clauses
 
 * Introduce Null Object
+
+* Replace Conditional with Polymorphism
