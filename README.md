@@ -42,9 +42,9 @@ void RenderBanner()
 
 void RenderBanner() 
 {
-  readonly bool isMacOs = platform.ToUpper().IndexOf("MAC") > -1;
-  readonly bool isIE = browser.ToUpper().IndexOf("IE") > -1;
-  readonly bool wasResized = resize > 0;
+  var isMacOs = platform.ToUpper().IndexOf("MAC") > -1;
+  var isIE = browser.ToUpper().IndexOf("IE") > -1;
+  var wasResized = resize > 0;
 
   if (isMacOs && isIE && wasInitialized() && wasResized) 
   {
@@ -59,16 +59,16 @@ void RenderBanner()
 ```cs
 // Avoid having a local variable that’s used to store various intermediate values inside a method
 
-double temp = 2 * (height + width);
+var temp = 2 * (height + width);
 Console.WriteLine(temp);
 temp = height * width;
 Console.WriteLine(temp);
 
 // Use different variables for different values instead
 
-readonly double perimeter = 2 * (height + width);
+var perimeter = 2 * (height + width);
 Console.WriteLine(perimeter);
-readonly double area = height * width;
+var area = height * width;
 Console.WriteLine(area);
 
 ```
